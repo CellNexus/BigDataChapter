@@ -12,7 +12,7 @@ category: blog
     <div class="card-block">
         <div class="row">
             <div class="col-3">
-                <img class="img-fluid" width=250 src="assets/img/{{ post.image }}">
+                <img class="img-fluid" width=250 src="/BigDataChapter/assets/img/{{ post.image }}">
             </div>
             <div class="col-9">
                 <h4 class="header">{{ post.title }}</h4>
@@ -25,7 +25,7 @@ category: blog
     </div>
     <div class="card-footer text-muted">
         {% if post.foreign_logo != null %}
-        <img src="assets/img/logo/{{ post.foreign_logo }}"
+        <img src="BigDataChapter/assets/img/logo/{{ post.foreign_logo }}"
              style="display: inline; float: left;"
              height="30">
         {% endif %}
