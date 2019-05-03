@@ -67,7 +67,7 @@ generated dataset, where each cluster is rendered with a different color.
 While the algorithm iterates through its loop, centroids slowly change their
 positions until there is no re-assignments anymore.
 
-![Clustering](/assets/img/clustering.gif){: .center-image}
+![Clustering]({{ site.baseurl }}/assets/img/clustering.gif){: .center-image}
 <em class="figure">Fig 1. K-Means clustering of dummy dataset with K=5</em>
 
 Due to the random generation of initial centroids, it is a good idea to
@@ -133,7 +133,7 @@ real vectors. To discretize this space into a finite number of buckets one could
 plot a grid on top of the plane with blue dots and replace each blue dot with a **red**
 one which is the center of a grid cell where the blue dot falls.
 
-![Quantization](/assets/img/dots.png){: .center-image}
+![Quantization]({{ site.baseurl }}/assets/img/dots.png){: .center-image}
 <em class="figure">Fig 2. Continuous 2D points discretized into buckets</em>
 
 The K-Means algorithm allows us to do exactly this. Each centroid vector could
@@ -160,7 +160,7 @@ But what if each file contains an _arbitrary number of coordinates_, i.e.
 its length is not predefined? That is exactly the case of [Wrist-worn Accelerometer Data Set](https://archive.ics.uci.edu/ml/datasets/Dataset+for+ADL+Recognition+with+Wrist-worn+Accelerometer)
 mentioned at the beginning of this post, as **Figure 3** shows:
 
-![Histogram](/assets/img/num_of_files_hist.png){: .center-image}
+![Histogram]({{ site.baseurl }}/assets/img/num_of_files_hist.png){: .center-image}
 <em class="figure">Fig 3. Histogram of most common file lengths</em>
 
 It is not possible to concatenate measurements together, because then each
@@ -169,7 +169,7 @@ overcome this issue and prepare the dataset for classification. The process of
 mapping from arbitrary length accelerometer observations array into a
 fixed-size feature vector is schematically shown in **Figure 4**.
 
-![KMeansToFeature](/assets/img/kmeans_quantization.png){: .center-image}
+![KMeansToFeature]({{ site.baseurl }}/assets/img/kmeans_quantization.png){: .center-image}
 <em class="figure">Fig 4. Using K-Means to create fixed-size feature vectors</em>
 
 Each of $$N$$ dataset's files should be parsed into a matrix of accelerometer

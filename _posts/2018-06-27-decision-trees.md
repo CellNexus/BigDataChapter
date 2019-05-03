@@ -45,7 +45,7 @@ However, in the post, we're describing a bit simplified version of this general 
 should show excellent performance on it, and the training process is very very fast. In our case, each node has two branches only and makes
 its decision comparing attribute, like, _Magnesium_, with a threshold value. Therefore, even for continuous attributes, each node performs a binary classification task.
 
-![TreeExample](/assets/img/decision_tree/tree_example.png){: .center-image}
+![TreeExample]({{ site.baseurl }}/assets/img/decision_tree/tree_example.png){: .center-image}
 <em class="figure">Fig 1. An example of decision tree trained on Wine Dataset</em>
 
 The figure gives a clue why the considered method of classification contains word "tree" in its name. The decision process constitutes the following branches of the directed acyclic graph depending on values of a classified observation's attributes.
@@ -159,7 +159,7 @@ dataset. However, what's going on if we try to train a tree on various subsets
 of the original dataset? **Figure 2** shows decision trees trained on
 three distinct random splits of the dataset.
 
-![TreeExample](/assets/img/decision_tree/trees.png){: .center-image}
+![TreeExample]({{ site.baseurl }}/assets/img/decision_tree/trees.png){: .center-image}
 <em class="figure">Fig 2. Group of decision trees trained using different dataset splits</em>
 
 Despite that the root nodes are almost equal, the trees are a bit different in
@@ -241,7 +241,7 @@ in percents. The $$N$$ value is varied from $$1$$ to $$1000$$. Each orange dot
 reflects an accuracy for a specific N value, and the blue curve is a polynomial
 approximation of these discrete measurements.
 
-![Accuracy](/assets/img/decision_tree/log_acc.png){: .center-image}
+![Accuracy]({{ site.baseurl }}/assets/img/decision_tree/log_acc.png){: .center-image}
 <em class="figure">Fig 3. Relationship between ensemble accuracy and its size</em>
 
 We're getting approximately **47%** accuracy on the validation subset with  **14** classes,
