@@ -5,7 +5,7 @@ category: blog
 <div class="container">
 {% for post in site.posts %}
 {% if post.foreign_url == null %}
-<div class="card post post-link" href="{{ site.baseurl }} {{ post.url }}">
+<div class="card post post-link" href="{{ site.baseurl }}{{ post.url }}">
 {% else %}
 <div class="card post post-link" href="{{ site.baseurl }}{{ post.foreign_url }}" foreign=true>
 {% endif %}
