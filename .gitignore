@@ -1,0 +1,8 @@
+*.
+!.gitignore
+Gemfile.lock
+node_modules/
+_site/
+*.log
+*~
+.DS_Store
