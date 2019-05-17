@@ -10,7 +10,7 @@ identifier: 4
 
 In this post, we're going to build environment about hadoop,big, spark. Finish Hortonworks Sandbox HDP installation. Later, we will use these system to finish some big data projects about using health data or other data.
 <br> 
-Author: Cell.
+Author: Sheryl, Cell.
 
 <!--more-->
 
