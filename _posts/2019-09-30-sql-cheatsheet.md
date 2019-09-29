@@ -24,30 +24,30 @@ Here are collections of big-data related cheatsheets and infographics from diffe
 </div>
 
 <hr class="with-margin">
-<h4 class="header" id="intro">SQL basics 1</h4>
+<h4 class="header" id="basics1">SQL basics 1</h4>
 
 ![sql1]({{ site.baseurl }}/assets/img/2019-09-28/SQL-cheat-sheet-1.png){: .center-image}
 
 
 <hr class="with-margin">
-<h4 class="header" id="intro">SQL basics 2</h4>
+<h4 class="header" id="basics2">SQL basics 2</h4>
 
 ![sql2]({{ site.baseurl }}/assets/img/2019-09-28/SQL-cheat-sheet-2.png){: .center-image}
 
 <hr class="with-margin">
-<h4 class="header" id="intro">SQL basics 3</h4>
+<h4 class="header" id="basics3">SQL basics 3</h4>
 
 ![sql3]({{ site.baseurl }}/assets/img/2019-09-28/SQL-cheat-sheet-3.png){: .center-image}
 
 <hr class="with-margin">
-<h4 class="header" id="intro">SQL basics 4</h4>
+<h4 class="header" id="basics4">SQL basics 4</h4>
 
 ![sql4]({{ site.baseurl }}/assets/img/2019-09-28/zt_sql_cheat_sheet-1.png){: .center-image}
 
 <hr class="with-margin">
-<h4 class="header" id="intro">SQL basics 5</h4>
+<h4 class="header" id="basics5">SQL basics 5</h4>
 
-![sql4]({{ site.baseurl }}/assets/img/2019-09-28/sql_reddit.jpg){: .center-image}
+![sql5]({{ site.baseurl }}/assets/img/2019-09-28/sql_reddit.jpg){: .center-image}
 
 
 <br></br>
