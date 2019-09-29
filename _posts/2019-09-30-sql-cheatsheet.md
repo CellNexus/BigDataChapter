@@ -2,7 +2,7 @@
 layout: post
 category: blog
 permalink: /:categories/:year/:month/:day/:title
-title: "Cheat Sheets for Big Data, Machine Learning & Deep Learning 4 SQL"
+title: "Cheat Sheets for Big Data 4: SQL"
 tags: ['Big Data', 'SQL', 'Cheatsheet']
 image: "2019-09-28/qsl_banner1.png"
 identifier: 4
