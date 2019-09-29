@@ -15,7 +15,7 @@ Collected by: Sheryl, Cell
 <!--more-->
 
 <blockquote class="tip">
-Here are collections of big-data related cheatsheets and infographics from difference resources. Thanks for these providers and references. This is for database part.
+Here are collections of big-data related cheatsheets and infographics from difference resources. Thanks for these providers and references. This is for <strong>database</strong> part.
 </blockquote>
 
 <div class="list-of-contents">
@@ -49,7 +49,32 @@ Here are collections of big-data related cheatsheets and infographics from diffe
 
 ![sql5]({{ site.baseurl }}/assets/img/2019-09-28/sql_reddit.jpg){: .center-image}
 
+<br></br>
+<hr class="with-margin">
+<h4 class="header" id="MySQLWorkbench">MySQL Workbench</h4>
+MySQL Workbench is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more. MySQL Workbench is available on Windows, Linux and Mac OS X.
+[Download MySQL Workbench](https://www.mysql.com/products/workbench/)
+![MySQL_Workbench1]({{ site.baseurl }}/assets/img/2019-09-28/MySQL_Workbench_Mainscreen_Windows.gif){: .center-image}
+![MySQL_Workbench2]({{ site.baseurl }}/assets/img/2019-09-28/MySQL_Workbench_Visual_Design_Windows.gif){: .center-image}
+![MySQL_Workbench3]({{ site.baseurl }}/assets/img/2019-09-28/MySQL_Workbench_Editor_General_Windows.gif){: .center-image}
+![MySQL_Workbench4]({{ site.baseurl }}/assets/img/2019-09-28/mysql_wb_performance_dashboard_win.png){: .center-image}
 
+<hr class="with-margin">
+<h4 class="header" id="MongoDB">MongoDB</h4>
+MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. No database is more productive to use.
+[Download MongoDB](https://www.mongodb.com/)
+![mongo_dashboard]({{ site.baseurl }}/assets/img/2019-09-28/mongo_dashboard.png){: .center-image}
+![mongo_query]({{ site.baseurl }}/assets/img/2019-09-28/mongodb_query1.png){: .center-image}
+
+<hr class="with-margin">
+<h4 class="header" id="APACHEHIVE">APACHE HIVE</h4>
+The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL. Structure can be projected onto data already in storage. A command line tool and JDBC driver are provided to connect users to Hive.
+[Download APACHE HIVE](https://hive.apache.org/index.html)
+![hive_dashboard]({{ site.baseurl }}/assets/img/2019-09-28/hiveschema.png){: .center-image}
+![hive_query]({{ site.baseurl }}/assets/img/2019-09-28/Hadoop-Hive-RCFile-OCR-File-Query-Performance-Big-Data.jpg){: .center-image}
+![hive_land]({{ site.baseurl }}/assets/img/2019-09-28/Facebook-Use-Case-Hive-Tutorial-Edureka.png){: .center-image}
+![hive_architecture]({{ site.baseurl }}/assets/img/2019-09-28/main-qimg-378b54cc2a776531b9d99742c9a2a981.jpg){: .center-image}
+![hive_all]({{ site.baseurl }}/assets/img/2019-09-28/hadoop-hive-fresh-28-best-hadoop-images-on-pinterest-of-hadoop-hive.jpg){: .center-image}
 <br></br>
 Enjoy our journey. 
 
