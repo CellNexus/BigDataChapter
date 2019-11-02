@@ -26,13 +26,13 @@ Here are collections of big-data related cheatsheets and infographics from diffe
 <hr class="with-margin">
 <h4 class="header" id="basics1">SQL basics 1</h4>
 
-![sql1]({{ site.baseurl }}/assets/img/2019-09-28/SQL-cheat-sheet-1.png){: .center-image}
+![sql1]({{ site.baseurl }}/assets/img/2019-09-28/SQL-cheat-sheet-1.png){: .half-image}
 
 
 <hr class="with-margin">
 <h4 class="header" id="basics2">SQL basics 2</h4>
 
-![sql2]({{ site.baseurl }}/assets/img/2019-09-28/SQL-cheat-sheet-2.png){: .center-image}
+![sql2]({{ site.baseurl }}/assets/img/2019-09-28/SQL-cheat-sheet-2.png){: .half-image}
 
 <hr class="with-margin">
 <h4 class="header" id="basics3">SQL basics 3</h4>
