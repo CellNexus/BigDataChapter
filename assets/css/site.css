@@ -283,6 +283,13 @@ blockquote.algo li:not(:last-child) {
     display: block;
 }
 
+.half-image {
+    margin: 0 auto;
+    display: block;
+    height:50%;
+    width:50;
+}
+
 /* ----- */
 /* Other */
 /* ----- */
