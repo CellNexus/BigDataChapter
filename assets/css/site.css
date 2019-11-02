@@ -287,7 +287,14 @@ blockquote.algo li:not(:last-child) {
     margin: 0 auto;
     display: block;
     height:50%;
-    width:50;
+    width:50%;
+}
+
+.small70-image {
+    margin: 0 auto;
+    display: block;
+    height:70%;
+    width:70%;
 }
 
 /* ----- */
