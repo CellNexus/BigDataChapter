@@ -63,7 +63,7 @@ Here are collections of big-data related cheatsheets and infographics from diffe
 ![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/ml_map_scikit_learn.png){: .small70-image}
 <br></br>
 ![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/sk1.png){: .small70-image}
-![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/sk2png){: .small70-image}
+![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/sk2png.png){: .small70-image}
 
 ![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/microsoft-machine-learning-algorithm-cheat-sheet-v7-1.png){: .small70-image}
 ![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/az1.png){: .small70-image}
