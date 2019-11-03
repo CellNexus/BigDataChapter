@@ -33,9 +33,9 @@ Here are collections of big-data related cheatsheets and infographics from diffe
 <hr class="with-margin">
 <h4 class="header" id="genera2">Data Science: Big-O Cheat Sheet</h4>
 
-![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/bigo-1.png){: .center-image}
+![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/bigo-1.png){: .small70-image}
 ![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/25_the_big_o_algorithm_data_structure_operations.png){: .small70-image}
-![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/b26_the_big_o_array_sorting_algorithms_chart.png){: .small70-image}
+![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/26_the_big_o_array_sorting_algorithms_chart.png){: .small70-image}
 
 
 
@@ -71,7 +71,7 @@ Here are collections of big-data related cheatsheets and infographics from diffe
 <hr class="with-margin">
 <h4 class="header" id="general7">Neural Network Cells</h4>
 
-![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/Neural Network Cells.png){: .center-image}
+![ClouderaWeb]({{ site.baseurl }}/assets/img/2019-09-28/Neural Network Cells.png){: .small70-image}
 
 
 <hr class="with-margin">
@@ -87,16 +87,16 @@ Here are collections of big-data related cheatsheets and infographics from diffe
 <hr class="with-margin">
 <h4 class="header" id="general10">Data Science Cheatsheet </h4>
 
-![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-01.png){: .center-image}
-![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-02.png){: .center-image}
-![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-03.png){: .center-image}
-![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-04.png){: .center-image}
-![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-05.png){: .center-image}
-![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-06.png){: .center-image}
-![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-07.png){: .center-image}
-![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-08.png){: .center-image}
-![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-09.png){: .center-image}
-![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-10.png){: .center-image}
+![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-01.png){: .small70-image}
+![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-02.png){: .small70-image}
+![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-03.png){: .small70-image}
+![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-04.png){: .small70-image}
+![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-05.png){: .small70-image}
+![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-06.png){: .small70-image}
+![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-07.png){: .small70-image}
+![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-08.png){: .small70-image}
+![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-09.png){: .small70-image}
+![Linux]({{ site.baseurl }}/assets/img/2019-09-28/data-science-cheatsheet-10.png){: .small70-image}
 
 <hr class="with-margin">
 <h4 class="header" id="general11">VIM</h4>
@@ -136,7 +136,7 @@ Here are collections of big-data related cheatsheets and infographics from diffe
 <br>
 Enjoy our journey. 
 
-If you have any suggestion or comments, or any question, please email me.
+If you have any suggestion or comments, or any question, please email us.
 
 
 ### References
