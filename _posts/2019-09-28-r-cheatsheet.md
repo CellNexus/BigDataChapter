@@ -174,7 +174,7 @@ RStudio is an integrated development environment for R, a programming language f
 <hr class="with-margin">
 <h4 class="header" id="basic-implementation">R Caret Package)</h4>
 The caret package (short for Classification And REgression Training) contains functions to streamline the model training process for complex regression and classification problems. The package utilizes a number of R packages but tries not to load them all at package start-up (by removing formal package dependencies, the package startup time can be greatly decreased).
-![r-caret]({{ site.baseurl }}/assets/img/2019-09-28/caret.pngg){: .small70-image}
+![r-caret]({{ site.baseurl }}/assets/img/2019-09-28/caret.png){: .small70-image}
 
 <hr class="with-margin">
 <h4 class="header" id="r26">R Estimatr Package)</h4>
