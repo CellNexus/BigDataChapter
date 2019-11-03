@@ -71,7 +71,7 @@ Anaconda is a free and open-source distribution of the Python and R programming 
 <hr class="with-margin">
 <h4 class="header" id="python8">Python Pandas</h4>
 
-![Python_pandas2]({{ site.baseurl }}/assets/img/pandas-1.png){: .small70-image}
+![Python_pandas2]({{ site.baseurl }}/assets/img/2019-09-28/pandas-1.png){: .small70-image}
 
 
 <hr class="with-margin">
