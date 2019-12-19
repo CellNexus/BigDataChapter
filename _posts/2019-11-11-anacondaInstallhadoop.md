@@ -4,7 +4,7 @@ category: blog
 permalink: /:categories/:year/:month/:day/:title
 title: "Installing Anaconda in Hadoop - Using Anaconda with Spark"
 tags: ['python', 'Anaconda', 'Hadoop']
-image: "2019-11-11/anaconda_cover1.png"
+image: "2019-11-11/installConda_14.PNG"
 identifier: 3
 ---
 Anaconda is a free and open-source distribution of the Python and R programming languages 
@@ -112,6 +112,6 @@ For HDP 3.1, still using python2, so you could install Anaconda2 and Anaconda3, 
 
 <ol>
   <li><a href="https://docs.anaconda.com/anaconda-scale/spark/">Using Anaconda with Spark</a></li>
-  <li><a href="https://enterprise-docs.anaconda.com/en/latest/data-science-workflows/templates/spark-hadoop.html"Hadoop Spark</a></li>
+  <li><a href="https://enterprise-docs.anaconda.com/en/latest/data-science-workflows/templates/spark-hadoop.html">Hadoop Spark</a></li>
   <li><a href="https://dzone.com/articles/making-python-on-apache-hadoop-easier-with-anacond">Making Python on Apache Hadoop Easier with Anaconda and CDH</a></li>
 </ol>
