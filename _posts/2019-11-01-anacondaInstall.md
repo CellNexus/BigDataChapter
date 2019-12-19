@@ -92,11 +92,11 @@ Open VM.
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_2.png){: .center-image}
-<em class="figure">Fig 2. </em>
+<em class="figure">Fig 2. Select New, and type name (here is Ubuntu_64bit)</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_3.png){: .center-image}
-<em class="figure">Fig 3. </em>
+<em class="figure">Fig 3. Select a memory size based on your computer </em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_4.png){: .center-image}
@@ -112,15 +112,15 @@ Open VM.
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_7.png){: .center-image}
-<em class="figure">Fig 7. </em>
+<em class="figure">Fig 7. Choose the VM file location. Default one is fine </em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_8.png){: .center-image}
-<em class="figure">Fig 8. </em>
+<em class="figure">Fig 8. Ubuntu_64bit is setup</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_9.png){: .center-image}
-<em class="figure">Fig 9. </em>
+<em class="figure">Fig 9. Set installation iso file folder</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_10.png){: .center-image}
@@ -131,7 +131,7 @@ Open VM.
 <em class="figure">Fig 11. </em>
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_12.png){: .center-image}
-<em class="figure">Fig 12. </em>
+<em class="figure">Fig 12. Select ubuntu iso installation file</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_13.png){: .center-image}
@@ -174,7 +174,7 @@ Open VM.
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_23.png){: .center-image}
-<em class="figure">Fig 23. </em>
+<em class="figure">Fig 23. Make sure the installation file is removed. and put Enter to restart ubuntu</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_24.png){: .center-image}
@@ -190,21 +190,21 @@ Open VM.
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_27.png){: .center-image}
-<em class="figure">Fig 27. </em>
+<em class="figure">Fig 27. sudo apt-get update.</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_28.png){: .center-image}
-<em class="figure">Fig 28. </em>
+<em class="figure">Fig 28. sudo apt-get install virtualbox-guest-utils</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_29.png){: .center-image}
-<em class="figure">Fig 29. </em>
+<em class="figure">Fig 29. Create or select one folder in your windows os, which will be shared with Ubuntu.</em>
 
 
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_30.png){: .center-image}
-<em class="figure">Fig 30. </em>
+<em class="figure">Fig 30. Link the shared folder</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_31.png){: .center-image}
@@ -227,7 +227,9 @@ Open VM.
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_36.png){: .center-image}
-<em class="figure">Fig 36. </em>
+<em class="figure">
+Fig 36. 
+</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_37.png){: .center-image}
@@ -235,7 +237,7 @@ Open VM.
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_38.png){: .center-image}
-<em class="figure">Fig 38. </em>
+<em class="figure">Fig 38. Now you will see the shared files. And there has Anaconda install file for Ubuntu</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_39.png){: .center-image}
@@ -243,7 +245,7 @@ Open VM.
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_40.png){: .center-image}
-<em class="figure">Fig 40. </em>
+<em class="figure">Fig 40. Install Anaconda in Ubuntu</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_41.png){: .center-image}
@@ -266,7 +268,7 @@ Open VM.
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_46.png){: .center-image}
-<em class="figure">Fig 46. </em>
+<em class="figure">Fig 46. After installation, close terminal,and restart again. to make effective.</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_47.png){: .center-image}
@@ -274,7 +276,7 @@ Open VM.
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_48.png){: .center-image}
-<em class="figure">Fig 48. </em>
+<em class="figure">Fig 48. Install keras deep learning packages</em>
 
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_49.png){: .center-image}
@@ -294,70 +296,6 @@ Open VM.
 <br>
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/ubuntu_vm_install_53.png){: .center-image}
 <em class="figure">Fig 53. </em>
-
-
-<hr class="with-margin">
-<h4 class="header" id="quantization">Anaconda Installation in Hadoop</h4>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_1.PNG){: .center-image}
-<em class="figure">Fig 1. </em>
-<br>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_2.PNG){: .center-image}
-<em class="figure">Fig 2. </em>
-<br>
-
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_3.PNG){: .center-image}
-<em class="figure">Fig 3. </em>
-<br>
-
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_4.PNG){: .center-image}
-<em class="figure">Fig 4. </em>
-<br>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_5.PNG){: .center-image}
-<em class="figure">Fig 5. </em>
-<br>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_6.PNG){: .center-image}
-<em class="figure">Fig 6. </em>
-<br>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_7.PNG){: .center-image}
-<em class="figure">Fig 7. </em>
-<br>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_8.PNG){: .center-image}
-<em class="figure">Fig 8. </em>
-<br>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_9.PNG){: .center-image}
-<em class="figure">Fig 9. </em>
-<br>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_10.PNG){: .center-image}
-<em class="figure">Fig 10. </em>
-<br>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_11.PNG){: .center-image}
-<em class="figure">Fig 11. </em>
-<br>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_12.PNG){: .center-image}
-<em class="figure">Fig 12. </em>
-<br>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_13.PNG){: .center-image}
-<em class="figure">Fig 13. </em>
-<br>
-
-![Clustering]({{ site.baseurl }}/assets/img/2019-11-01/installConda_14.PNG){: .center-image}
-<em class="figure">Fig 14. </em>
-<br>
-
-
 
 <hr class="with-margin">
 <h4 class="header" id="quantization">Difference of Anaconda、conda、pip、virtualenv</h4>
