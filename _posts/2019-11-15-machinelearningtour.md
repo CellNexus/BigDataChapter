@@ -2,26 +2,24 @@
 layout: post
 category: blog
 permalink: /:categories/:year/:month/:day/:title
-title: "Using K-Means Clustering to Quantize Dataset Samples (Part 1)"
-tags: ['python', 'kmeans', 'numpy']
-image: "kmeans.png"
+title: "A Tour of Machine Learning Ten Algorithms"
+tags: ['Machine Learning', 'Algorithms']
+image:"2019-11-15/machine-learning-algorithms-cover.png"
 identifier: 3
 ---
 
-Clustering algorithms are used to analyze data in an unsupervised fashion, in
-cases when labels are not available or to get new insights about the dataset.
-The K-Means algorithm is one of the oldest clustering algorithms developed
-several decades ago but still applied in Machine Learning tasks. One of the ways
-to use this algorithm is to apply it for _vector quantization_, a process which
-allows reducing the dimensionality of analyzed data. In this post, I'm going to
-implement a simple implementation of K-Means and apply it to [Wrist-worn Accelerometer Dataset](https://archive.ics.uci.edu/ml/datasets/Dataset+for+ADL+Recognition+with+Wrist-worn+Accelerometer).Author: Ilia Zaitsev.
-
-<!--more-->
+Machine learning algorithms are programs that can learn from data and improve from experience, without human intervention. 
+Learning tasks may include learning the function that maps the input to the output, learning the hidden structure in unlabeled data; 
+or ‘instance-based learning’, where a class label is produced for a new instance by comparing the new instance (row) to instances from 
+the training data, which were stored in memory. ‘Instance-based learning’ does not create an abstraction from specific instances.
+<br>
+Machine learning is also often referred to as predictive analytics, or predictive modelling.
+<br>
 
 <blockquote class="tip">
-<strong>TL;DR:</strong> Everyone who doesn't need verbose explanations and
-prefers to read the code instead could use <a href="https://github.com/devforfu/Blog/tree/master/kmeans">
-this link</a> to navigate right into the repository with vectors quantization implementation.
+<strong> Machine learning</strong> uses programmed algorithms that receive and analyse input data to predict output values within an acceptable range. 
+ As new data is fed to these algorithms, they learn and optimise their operations to improve performance, developing ‘intelligence’ over time.
+There are four types of machine learning algorithms: <strong> supervised, semi-supervised, unsupervised and reinforcement</strong>.
 </blockquote>
 
 <div class="list-of-contents">
@@ -30,184 +28,133 @@ this link</a> to navigate right into the repository with vectors quantization im
 </div>
 
 <hr class="with-margin">
-<h4 class="header" id="intro">K-Means Algorithm</h4>
+<h4 class="header" id="intro">Supervised learning</h4>
 
-K-means clustering is a simple and elegant approach for partitioning a dataset
-into **K** distinct, non-overlapping clusters. The algorithm implementation
-could be represented using the following pseudocode:
+![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/ml_glance_1.jpg){: .center-image}
+<em class="figure">Fig 1. machine-learning at a glance</em>
+
+![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/ml_glance_2.png){: .center-image}
+<em class="figure">Fig 2. machine-learning</em>
+
+In **supervised learning**, the machine is taught by example (traning data). There are known-labeled data .
+The operator provides the machine learning algorithm with a known dataset that includes desired inputs and outputs, 
+and the algorithm must find a method to determine how to arrive at those inputs and outputs. 
+While the operator knows the correct answers to the problem, the algorithm identifies patterns in data, 
+learns from observations and makes predictions. The algorithm makes predictions and 
+is corrected by the operator – and this process continues until the algorithm achieves a high level of accuracy/performance.
 
 <blockquote class="algo">
   <ol>    
     <li>
-      Assign random labels from range `1...K` to each observation in
-      dataset to get an initial partitioning.
+      Classification: In classification tasks, the machine learning program must draw a conclusion from observed values and determine to what category new observations belong. For example, when filtering emails as ‘spam’ or ‘not spam’, the program must look at existing observational data and filter the emails accordingly.
     </li>
     <li>
-      For each of `K` clusters, compute the cluster <em>centroid</em> which is
-      the vector of <em>p</em> feature means for the observations in the
-      <strong><em>k</em></strong>th cluster. (In other words, each cluster's centroid is
-      an average of vectors assigned to the cluster).
+      Regression: In regression tasks, the machine learning program must estimate – and understand – the relationships among variables. Regression analysis focuses on one dependent variable and a series of other changing variables – making it particularly useful for prediction and forecasting..
     </li>
     <li>
-      Assign each observation to the cluster whose centroid is closest in
-      terms of <em>Euclidian distance</em> metric.
+      Forecasting: Forecasting is the process of making predictions about the future based on the past and present data, and is commonly used to analyse trends.
     </li>
-    <li>If clusters assignment was changed, go to <strong>step 2</strong></li>
-    <li>Return calculated cluster centroids and assigned labels.</li>
   </ol>
 </blockquote>
 
-Note that the algorithm uses the Euclidean metric to measure the similarity between
-data points. It means that each dimension is considered to be **equally important**
-to differentiate one sample from another. Therefore, it is crucial to normalize
-your dataset before running the algorithm.
+![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/supervised-machine-learning.png){: .center-image}
+<em class="figure">Fig 1. supervised-machine-learning</em>
 
-**Figure 1** shows an animated process of K-Means clustering of a randomly
-generated dataset, where each cluster is rendered with a different color.
-While the algorithm iterates through its loop, centroids slowly change their
-positions until there is no re-assignments anymore.
+![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/ml_2.png){: .center-image}
+<em class="figure">Fig 2. supervised vs. unsupervised</em>
 
-![Clustering]({{ site.baseurl }}/assets/img/clustering.gif){: .center-image}
-<em class="figure">Fig 1. K-Means clustering of dummy dataset with K=5</em>
-
-Due to the random generation of initial centroids, it is a good idea to
-run the algorithm several times and choose the best clusters assignment. Which
-assignment is the best? For this purpose one could use an **inertia metric**,
-which is the total distance from samples to their clusters's centroids:
-
-$$
-I = \sum_{j = 1}^{K}{ \sum_{\substack{i = 1 \\ x_i \in C_j}}^{N}{ d(x_i, c_j)} }
-$$
-
-Where $$K$$ is a number of clusters, $$N$$ &mdash; a number of observations,
-$$C_j$$ is a set of observations belonging to cluster $$j$$ and $$c_j$$ is centroid
-of $$j$$th cluster. This measure of clustering quality which shows how close
-dataset observations are to the centers of their clusters.
-
-In next section, we're going to implement K-Means clustering using `numpy` library.
 
 <hr class="with-margin">
-<h4 class="header" id="implementation">Implementation with NumPy</h4>
+<h4 class="header" id="implementation">Unsupervised learning</h4>
 
-The full source code with K-Means clustering implementation could be found
-via [this link](https://github.com/devforfu/Blog/blob/master/kmeans/kmeans.py).
-In this section let's highlight the main keypoints of the algorithm.
+The machine learning algorithm studies data to identify patterns. Input data is not labeled and does not have a known result. There is no answer key or human operator to provide instruction. 
+Instead, the machine determines the correlations and relationships by analysing available data. 
+In an unsupervised learning process, the machine learning algorithm is left to interpret large data sets and address that data accordingly. 
+The algorithm tries to organise that data in some way to describe its structure. 
+This might mean grouping the data into clusters or arranging it in a way that looks more organised.
+<br>
+As it assesses more data, its ability to make decisions on that data gradually improves and becomes more refined.
+<blockquote class="algo">
+  <ol>    
+    <li>
+    Clustering: Clustering involves grouping sets of similar data (based on defined criteria). It’s useful for segmenting data into several groups and performing analysis on each data set to find patterns.
+	</li>
+    <li>
+	Dimension reduction: Dimension reduction reduces the number of variables being considered to find the exact information required.
+	</li>
+  </ol>
+</blockquote>
 
-To implement the main loop of K-Means clustering we need a function that accepts
-a dataset, a number of clusters $$K$$, and a couple of additional
-parameters to specify how many restarts of algorithm do we want to perform to
-find the best clustering assignment:
-
-<script src="https://gist.github.com/devforfu/43e1a43054bd22081b71083d66ca0464.js"></script>
-
-A dataset normalization required only to subtract the mean of dataset values
-from each of samples and divide them by standard deviation. To generate random
-centroids we can use one of the random generators from `numpy.random` module.
-Calculating an inertia metric is also quite simple using `numpy` and its
-filtering and linear algebra functions:
-
-<script src="https://gist.github.com/devforfu/37642a7caddc5f38fba331895d6356e7.js"></script>
-
-Before proceeding to quantization algorithm, here is an important remark. Despite
-the fact that the implementation of K-Means algorithm provided in this post's
-repository is totally functional and does its job, it is quite far away from the
-production-ready code.
-
-Check [this link](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/cluster/k_means_.py)
-from scikit-learn library showing handling various edge cases and making code
-much faster than naïve implementation, including [fragments](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/cluster/_k_means.pyx)
-written in [Cython](http://cython.org/) for higher performance.
+![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/Supervised-and-unsupervised-machine-learning.png){: .center-image}
+<em class="figure">Fig 3. Supervised-and-unsupervised-machine-learning</em>
 
 <hr class="with-margin">
-<h4 class="header" id="quantization">Vectors Quantization</h4>
+<h4 class="header" id="quantization">Semi-supervised learning</h4>
+Semi-supervised learning is similar to supervised learning, but instead uses both labelled and unlabelled data. Input data is a mixture of labeled and unlabelled examples. Labelled data is essentially information that has meaningful tags so that the algorithm can understand the data, whilst unlabelled data lacks that information. By using this
+combination, machine learning algorithms can learn to label unlabelled data.
 
-Before being used in data mining for cluster analysis, the algorithm was originally
-used in the field of signal processing as a method of **vectors quantization** (VQ).
-VQ is a data reduction method which means that it seeks to reduce the number
-of dimensions in the input data so that the models used to match unknowns can
-be as simple as possible.
 
-Quantization allows transforming continuous values into discrete buckets. **Figure 2**
-shows a 2D plane filled with **blue** dots representing values of random continuous
-real vectors. To discretize this space into a finite number of buckets one could
-plot a grid on top of the plane with blue dots and replace each blue dot with a **red**
-one which is the center of a grid cell where the blue dot falls.
-
-![Quantization]({{ site.baseurl }}/assets/img/dots.png){: .center-image}
-<em class="figure">Fig 2. Continuous 2D points discretized into buckets</em>
-
-The K-Means algorithm allows us to do exactly this. Each centroid vector could
-be treated as a center of a "grid cell", and can be used as a "discretized"
-representation of vectors in proximity. But in case of K-Means, quantized
-vectors could have much more dimensions and the "cells" are not in 2D, but
-generally in $$N$$-dimensional space.
-
-Next section shows how this idea can be used to convert observation vectors of
-arbitrary length into fixed-size feature vectors.
+![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/semi-supervised_1.png){: .center-image}
+<em class="figure">Fig 4. Semi-Supervised machine learning</em>
 
 <hr class="with-margin">
-<h4 class="header" id="casestudy">Applying K-Means to Accelerometer Data</h4>
+<h4 class="header" id="casestudy">Reinforcement learning</h4>
+Reinforcement Learning is an aspect of Machine learning where an agent learns to behave in an environment, 
+by performing certain actions and observing the rewards/results which it get from those actions
 
-Consider the following use case. You have a dataset with accelerometer
-measurements. Each measurement is saved into a separate text file and is
-represented by a sequence of $$(x, y, z)$$ coordinates. Also, each measurement
-belongs to one of $$M$$ activity types, like $$PourWater$$ or $$Walk$$. To convert
-this dataset into something suitable for a machine learning algorithm
-(SVM, decision tree, logistic regression or anything else), one needs to read
-measurements from files and concatenate their coordinates into feature vectors.
+Reinforcement learning focuses on regimented learning processes, where a machine learning algorithm is provided with a set of actions,
+ parameters and end values. By defining the rules, the machine learning algorithm then tries to explore different options and possibilities,
+ monitoring and evaluating each result to determine which one is optimal. Reinforcement learning teaches the machine trial and error. 
+ <br>
+ It learns from past experiences and begins to adapt its approach in response to the situation to achieve the best possible result.
 
-But what if each file contains an _arbitrary number of coordinates_, i.e.
-its length is not predefined? That is exactly the case of [Wrist-worn Accelerometer Data Set](https://archive.ics.uci.edu/ml/datasets/Dataset+for+ADL+Recognition+with+Wrist-worn+Accelerometer)
-mentioned at the beginning of this post, as **Figure 3** shows:
+![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/reinforcementlearning_1.png){: .center-image}
+<em class="figure">Fig 5. Reinforcement learning</em>
 
-![Histogram]({{ site.baseurl }}/assets/img/num_of_files_hist.png){: .center-image}
-<em class="figure">Fig 3. Histogram of most common file lengths</em>
-
-It is not possible to concatenate measurements together, because then each
-feature vector would have a different length. But K-Means clustering can help to
-overcome this issue and prepare the dataset for classification. The process of
-mapping from arbitrary length accelerometer observations array into a
-fixed-size feature vector is schematically shown in **Figure 4**.
-
-![KMeansToFeature]({{ site.baseurl }}/assets/img/kmeans_quantization.png){: .center-image}
-<em class="figure">Fig 4. Using K-Means to create fixed-size feature vectors</em>
-
-Each of $$N$$ dataset's files should be parsed into a matrix of accelerometer
-measurements with shape $$(M_i, 3)$$ where $$M_i$$ is $$i$$th file length.
-Then, the clustering algorithm with $$K$$ clusters should be applied to
-**each of these matrices, separately**. Finally, the centroids calculated for each
-matrix should be concatenated into 1-dimensional feature vectors with length
-$$K \times 3$$, and then stacked together into the final matrix of
-size $$(N, K \times 3)$$.
-
-The following snippet shows how this processes looks in code:
-
-<script src="https://gist.github.com/devforfu/8e302609ae11cc70c1b18bcf88a7cff7.js"></script>
-
-The project with full implementation of the functions described in this post
-could be found via [this link](https://github.com/devforfu/Blog/tree/master/kmeans)
-alongside with the aforementioned dataset and a couple of helper utilities.
 
 <hr class="with-margin">
-<h4 class="header" id="conclusion">Conclusion</h4>
+<h4 class="header" id="casestudy">Common and popular machine learning algorithms</h4>
+![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/MachineLearningAlgorithms_0.png){: .center-image}
+<em class="figure">Fig 5. MachineLearning Algorithms</em>
+<br>
+**Regression Algorithms**
+<br>
+**Decision Tree Algorithms**
+<br>
+**Naïve Bayes Classifier Algorithm**
+<br>
+**Clustering Algorithms: (Unsupervised Learning)**
+<br>
+**Support Vector Machines**
+<br>
+**Principal Component Analysis**
+<br>
+**Artificial Neural Networks Algorithms(Reinforcement Learning)**
+<br>
+**Deep Learning Algorithms**
+<br>
 
-The K-Means algorithm is a simple, but powerful clustering technique which
-should have its place in any machine learning engineer's toolkit. It could be
-applied not only in an unsupervised learning setting to discover patterns of
-an analyzed dataset, but also to reduce a dimensionality of the considered
-problem.
+![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/machine-learning-cheet-sheet.png){: .center-image}
+<em class="figure">Fig 5.[machine-learning-cheet-sheet](https://blogs.sas.com/content/subconsciousmusings/2017/04/12/machine-learning-algorithm-use/)</em>
 
-Though it is simple to implement this method from scratch, it is
-better to use robust, scalable and well-tested solution instead, like
-[scikit-learn implementation](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html), which takes into account various edge
-cases and improvements.
+<br>
+![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/ml_map.png){: .center-image}
+<em class="figure">Fig 5. Usage examples</em>
+<br>
+![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/Types-of-Machine-Learning-algorithms.png){: .center-image}
+<em class="figure">Fig 5. Usage examples</em>
+
+
+
 
 <hr class="with-margin">
 ### References
 
 <ol>
-  <li><a href="https://iliazaitsev.me/blog/2018/05/19/kmeans-quantizer">Original Post</a></li>
-  <li><a href="http://stanford.edu/~cpiech/cs221/handouts/kmeans.html">K-Means algorithm pseudocode</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/K-means_clustering">K-Means clustering Wikipedia article</a></li>
-  <li><a href="http://web.science.mq.edu.au/~cassidy/comp449/html/ch10s03.html">Vector Quantization</a></li>
+  <li><a href="https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/">A Tour of Machine Learning Algorithms</a></li>
+  <li><a href="https://www.kdnuggets.com/2016/08/10-algorithms-machine-learning-engineers.html">The 10 Algorithms Machine Learning Engineers Need to Know </a></li>
+  <li><a href="https://www.dataquest.io/blog/top-10-machine-learning-algorithms-for-beginners/">The 10 Best Machine Learning Algorithms for Data Science Beginners</a></li>
+  <li><a href="https://towardsdatascience.com/top-10-machine-learning-algorithms-for-data-science-cdb0400a25f9">Top 10 Machine Learning Algorithms for Data Sciencen</a></li>
+  <li><a href="https://www.sas.com/en_ie/insights/articles/analytics/machine-learning-algorithms.html">A guide to machine learning algorithms and their applications</a></li>
+  <li><a href="https://blogs.sas.com/content/subconsciousmusings/2017/04/12/machine-learning-algorithm-use/">Which machine learning algorithm should I use?</a></li>
 </ol>
