@@ -3,8 +3,8 @@ layout: post
 category: blog
 permalink: /:categories/:year/:month/:day/:title
 title: "A Tour of Machine Learning Ten Algorithms"
-tags: ['Machine Learning', 'Algorithms']
-image:"2019-11-15/machine-learning-algorithms-cover.png"
+tags: ['Machine Learning', 'Alogrithms']
+image: "2019-11-15/machine-learning-algorithms-cover.png"
 identifier: 3
 ---
 
