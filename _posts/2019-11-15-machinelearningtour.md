@@ -12,9 +12,9 @@ Machine learning algorithms are programs that can learn from data and improve fr
 Learning tasks may include learning the function that maps the input to the output, learning the hidden structure in unlabeled data; 
 or ‘instance-based learning’, where a class label is produced for a new instance by comparing the new instance (row) to instances from 
 the training data, which were stored in memory. ‘Instance-based learning’ does not create an abstraction from specific instances.
-
+<br>
 Machine learning is also often referred to as predictive analytics, or predictive modelling.
-
+<!--more-->
 
 <blockquote class="tip">
 <strong> Machine learning</strong> uses programmed algorithms that receive and analyse input data to predict output values within an acceptable range. 
@@ -114,6 +114,7 @@ Reinforcement learning focuses on regimented learning processes, where a machine
 
 <hr class="with-margin">
 <h4 class="header" id="casestudy">Common and popular machine learning algorithms</h4>
+
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/MachineLearningAlgorithms_0.png){: .center-image}
 <em class="figure">Fig 5. MachineLearning Algorithms</em>
 <br>
@@ -144,12 +145,8 @@ Reinforcement learning focuses on regimented learning processes, where a machine
 ![Clustering]({{ site.baseurl }}/assets/img/2019-11-15/Types-of-Machine-Learning-algorithms.png){: .center-image}
 <em class="figure">Fig 5. Usage examples</em>
 
-
-
-
 <hr class="with-margin">
 ### References
-
 <ol>
   <li><a href="https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/">A Tour of Machine Learning Algorithms</a></li>
   <li><a href="https://www.kdnuggets.com/2016/08/10-algorithms-machine-learning-engineers.html">The 10 Algorithms Machine Learning Engineers Need to Know </a></li>
