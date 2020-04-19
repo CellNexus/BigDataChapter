@@ -56,7 +56,7 @@ There are some free service provided by Azure free account.
 We could select to create a Windows VM or Linux VM, or other service.  
 Here we choose Linux VM for a future server.
 
-![VM]({{ site.baseurl }}/assets/img/2020-01-11/2.png){: .center-image}
+![VM]({{ site.baseurl }}/assets/img/2020-01-11/2.png){: .small70-image}
 <em class="figure">Fig 2. Free Services interface for the Azure free account</em>
 <br>
 
@@ -94,21 +94,21 @@ After vm selections, review all details.
 <br>
 You could download a template for automation, or could download after create this vm.
 
-![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/10.png){: .center-image}
+![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/10.png){: .small70-image}
 <em class="figure">Fig 8.Template.</em>
 <br>
 
-![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/11.png){: .center-image}
+![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/11.png){: .small70-image}
 <em class="figure">Fig 9.Template zip file </em>
 <br>
 
 After click create, will deployment progress.
-![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/13.png){: .center-image}
+![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/13.png){: .small70-image}
 <em class="figure">Fig 10. deployment progress</em>
 <br>
 
 After deployment is complete, you could download deployment details, got to resource.
-![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/14.png){: .center-image}
+![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/14.png){: .small70-image}
 <em class="figure">Fig 11. deployment is complete </em>
 <br>
 
