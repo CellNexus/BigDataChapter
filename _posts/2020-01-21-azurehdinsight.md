@@ -8,6 +8,7 @@ image: "2020-01-21/hdinsight-architecture-iot.png"
 identifier: 3
 ---
 Azure HDInsight is easy, cost-effective, enterprise-grade service for open source analytics. Azure HDInsight is a managed, full-spectrum, open-source analytics service in the cloud for enterprises. You can use open-source frameworks such as Hadoop, Apache Spark, Apache Hive, LLAP, Apache Kafka, Apache Storm, R, and more.
+
 Author and collect by: Sheryl
 
 <!--more-->
@@ -31,14 +32,14 @@ Check <a href="https://azure.microsoft.com/en-us/services/hdinsight/">Hadoop in 
 
 Sign in to the Azure Stack Hub portal.
 
-![azureservice]({{ site.baseurl }}/assets/img/2020-01-21/portal-1.png){: .center-image}
+![azureservice]({{ site.baseurl }}/assets/img/2020-01-21/portal-1.png){: .small70-image}
 <em class="figure">Fig Login and go to Portal.
 </em>
 <br>
 
 
 
-![azureservice]({{ site.baseurl }}/assets/img/2020-01-21/portal-2.png){: .center-image}
+![azureservice]({{ site.baseurl }}/assets/img/2020-01-21/portal-2.png){: .small70-image}
 <em class="figure">Fig Create a new resource.
 </em>
 <br>
@@ -69,7 +70,7 @@ Here we select Hadoop as cluster type.
 <br>
 
 Select the <strong> Next: Storage >> </strong> to advance to the storage settings.
-![Clustering]({{ site.baseurl }}/assets/img/2020-01-21/hdinsight-4.png){: .center-image}
+![Clustering]({{ site.baseurl }}/assets/img/2020-01-21/hdinsight-4.png){: .small70-image}
 <em class="figure">Fig 4. Cluster details. </em>
 <br>
 
@@ -113,7 +114,7 @@ Go to Dashboard to check all resource created.
 
 Click one resource, here is hdinsight1. there is a <strong> URL</strong>  at the right, copy paste to browser.
 
-![Clustering]({{ site.baseurl }}/assets/img/2020-01-21/hdinsight-13b.png){: .center-image}
+![Clustering]({{ site.baseurl }}/assets/img/2020-01-21/hdinsight-13b.png){: .small70-image}
 <em class="figure">Fig 12b. Check resource details,and will connect.</em>
 <br>
 
@@ -121,7 +122,7 @@ Click one resource, here is hdinsight1. there is a <strong> URL</strong>  at the
 <em class="figure">Fig 12c. Fill credentials when you type in creating this.</em>
 <br>
 
-![Clustering]({{ site.baseurl }}/assets/img/2020-01-21/hdinsight-13.png){: .center-image}
+![Clustering]({{ site.baseurl }}/assets/img/2020-01-21/hdinsight-13.png){: .small70-image}
 <em class="figure">Fig 12d. Now, you will see dashboard of hadoop.</em>
 <br>
 
