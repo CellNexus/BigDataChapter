@@ -98,7 +98,7 @@ You could download a template for automation, or could download after create thi
 <em class="figure">Fig 8.Template.</em>
 <br>
 
-![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/11.png){: .small70-image}
+![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/11.png){: .center-image}
 <em class="figure">Fig 9.Template zip file </em>
 <br>
 
@@ -112,7 +112,7 @@ After deployment is complete, you could download deployment details, got to reso
 <em class="figure">Fig 11. deployment is complete </em>
 <br>
 
-![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/15.png){: .center-image}
+![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/15.png){: .small70-image}
 <em class="figure">Fig 12. REsource details</em>
 <br>
 If you're using the Azure Stack Development Kit (ASDK), you might not have access to a Secure Shell (SSH) client. If you need a client, several packages include an SSH client. For example, PuTTY includes an SSH client and SSH Key Generator (puttygen.exe). 
@@ -139,7 +139,7 @@ Type login name and pwd
 <br>
 
 Or you can get Connect file and details about ssh.
-![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/20.png){: .center-image}
+![Clustering]({{ site.baseurl }}/assets/img/2020-01-11/20.png){: .small70-image}
 <em class="figure">Fig 17. Select vm,and click Connect tab.</em>
 <br>
 
