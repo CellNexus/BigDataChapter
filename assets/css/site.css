@@ -297,6 +297,11 @@ blockquote.algo li:not(:last-child) {
     width:90%;
 }
 
+.autofit-image {
+    max-width:100%;
+    object-fit: scale-down;
+}
+
 /* ----- */
 /* Other */
 /* ----- */
