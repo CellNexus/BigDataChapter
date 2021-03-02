@@ -4,7 +4,7 @@ category: blog
 permalink: /:categories/:year/:month/:day/:title
 title: "Set up gitlab-runner for GitLab CI"
 tags: ['GitHub', 'CI/CD']
-image: "2021-02-28\runner_logo.png"
+image: "2021-02-28/runner_logo.png"
 identifier: 3
 ---
 Using your local development machine as GitLab CI runner instead of the shared runners. GitLab runner is a build instance which is used to run the jobs over multiple machines and send the results to GitLab and which can be placed on separate users, servers, and local machine. You can register the runner as shared or specific after installing it. 
@@ -33,20 +33,25 @@ Registering runners by using VPS. Here is using VM. This VM could be created fro
 <hr class="with-margin">
 <h4 class="header" id="quantization">Step 1: Create gitlab-runner</h4>
 
-#ssh root@your_server_ip_address
-
-#adduser gitlab-runner
-
+<br>
+ssh root@your_server_ip_address
+<br>
+adduser gitlab-runner
+<br>
 May sign permissions to this user without add sudo (like adding gitlab-runner ALL=(ALL) NOPASSWD:ALL), and offer docker permissions depend on your arch).
+<br>
 
 ![createuser]({{ site.baseurl }}/assets/img/2021-02-28/1.png){: .center-image}
 <em class="figure">Fig 1. Create gitlab-runner user.</em>
 <br>
 
 <hr class="with-margin">
-<h4 class="header" id="quantization">Step 2: Install runner/h4>
+<h4 class="header" id="quantization">Step 2: Install runner </h4>
+
+Here is introducing to installing Gitlab Runner
 
 [Installing GitLab Runner](https://docs.gitlab.com/runner/install/linux-repository.html)
+
 ![installrunner]({{ site.baseurl }}/assets/img/2021-02-28/3.png){: .center-image}
 <em class="figure">Fig 2. Install Gitlab runner.</em>
 <br>
@@ -55,17 +60,13 @@ May sign permissions to this user without add sudo (like adding gitlab-runner AL
 <em class="figure">Fig 3. Install Gitlab runner.</em>
 <br>
 
-1 Add the official GitLab repository:
-
-curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
+Add the official GitLab repository:
 
 ![installrunner]({{ site.baseurl }}/assets/img/2021-02-28/4.png){: .center-image}
 <em class="figure">Fig 4. Install Gitlab runner.</em>
 <br>
 
-2 Install the latest version of GitLab Runner
-
-export GITLAB_RUNNER_DISABLE_SKEL=true; sudo -E apt-get install gitlab-runner
+Install the latest version of GitLab Runner:
 
 ![installrunner]({{ site.baseurl }}/assets/img/2021-02-28/6.png){: .center-image}
 <em class="figure">Fig 5. Install Gitlab runner.</em>
@@ -74,7 +75,9 @@ export GITLAB_RUNNER_DISABLE_SKEL=true; sudo -E apt-get install gitlab-runner
 
 <hr class="with-margin">
 <h4 class="header" id="quantization">Step 3: Registering runners</h4>
+
 Registering a runner is the process that binds the runner with a GitLab instance.
+
 [Registering runners](https://docs.gitlab.com/runner/register/)
 
 ![regesterrunner]({{ site.baseurl }}/assets/img/2021-02-28/7.png){: .center-image}
@@ -86,6 +89,7 @@ sudo gitlab-runner register
 ![regesterrunner]({{ site.baseurl }}/assets/img/2021-02-28/8.png){: .center-image}
 <em class="figure">Fig 7. Register runner with your CICD setting info</em>
 <br>
+
 Enter your GitLab instance URL (also known as the gitlab-ci coordinator URL).
 
 Enter the token you obtained to register the runner.
