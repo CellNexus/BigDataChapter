@@ -40,7 +40,7 @@ Here, we are going to create one compute instance VM.
 <em class="figure">Fig. Oracle Cloud Resources 1</em>
 <br>
 
-![freetier2]({{ site.baseurl }}assets/img/2021-12-18/oracle-free-0a.png){: .small70-image}
+![freetier2]({{ site.baseurl }}assets/img/2021-12-18/oracle-free-a.png){: .small70-image}
 <em class="figure">Fig. Oracle Cloud Resources 2</em>
 <br>
 
