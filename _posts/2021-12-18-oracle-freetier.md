@@ -36,11 +36,11 @@ Following screenshots show Oracle Cloud services. There are "Always Free Eligibl
 
 Here, we are going to create one compute instance VM.
 
-![freetier1]({{ site.baseurl }}/assets/img/2021-12-18/oracle-free-0.png){: .center-image}
+![freetier1]({{ site.baseurl }}/assets/img/2021-12-18/oracle-free-0.png){: .small70-image}
 <em class="figure">Fig. Oracle Cloud Resources 1</em>
 <br>
 
-![freetier2]({{ site.baseurl }}assets/img/2021-12-18/oracle-free-0a.png){: .center-image}
+![freetier2]({{ site.baseurl }}assets/img/2021-12-18/oracle-free-0a.png){: .small70-image}
 <em class="figure">Fig. Oracle Cloud Resources 2</em>
 <br>
 
@@ -52,14 +52,14 @@ Here, we are going to create one compute instance VM.
 Login Oracle Cloud
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-login.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-login.png){: .small70-image}
 <em class="figure">Fig . Oracle Cloud Login.</em>
 <br>
 
 Quickstarts Launch Resources
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-1.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-1.png){: .small70-image}
 <em class="figure">Fig . Launch Resources -  Create a VM instance.</em>
 <br>
 
@@ -70,7 +70,7 @@ Quickstarts Launch Resources
 Create compute instance (Always free)
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2a.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2a.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance.</em>
 <br>
 
@@ -78,7 +78,7 @@ Create compute instance (Always free)
 Shape VM Image
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2c.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2c.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : Image and shape</em>
 <br>
 
@@ -87,14 +87,14 @@ Shape VM Image
 Shape VM Image
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2b.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2b.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : shape</em>
 <br>
 
 Browse all images
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2d.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2d.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : image choices</em>
 <br>
 
@@ -103,7 +103,7 @@ Browse all images
 Here is using Oracle Linux and set version as 8.
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2e.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2e.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : image choices</em>
 <br>
 
@@ -111,7 +111,7 @@ Here is using Oracle Linux and set version as 8.
 Here is using Ampere.
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2f.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2f.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : Ampere image</em>
 <br>
 
@@ -119,7 +119,7 @@ Here is using Ampere.
 4 OCPUs, and 24M RAM.
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2g.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2g.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : OCPU and Memory setting</em>
 <br>
 
@@ -127,7 +127,7 @@ Here is using Ampere.
 VM instance review.
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2h.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-2h.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : VM instance review</em>
 <br>
 
@@ -139,12 +139,12 @@ Add SSH pub key to VM instance. Check previous blog to get pub key when using wi
 like macos:  '''cat .ssh/id_rsa.pub'''
 
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-4.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-4.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : set SSH</em>
 <br>
 
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-4a.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-4a.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : set SSH</em>
 <br>
 
@@ -154,7 +154,7 @@ like macos:  '''cat .ssh/id_rsa.pub'''
 Create
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-5.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-5.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : create VM</em>
 <br>
 
@@ -165,14 +165,14 @@ Create
 VM is created. Check status.
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-6.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-6.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : creating VM</em>
 <br>
 
 VM is created. Running.
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-8.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-8.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : VM is running</em>
 <br>
 
@@ -184,7 +184,7 @@ VM is created. Running.
 '''ssh name@vmip'''
 <br>
 
-![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-9a.png){: .center-image}
+![createvm]({{ site.baseurl }}/assets/img/2021-12-18/oracle-9a.png){: .small70-image}
 <em class="figure">Fig . Configure a VM instance : VM is accessed</em>
 <br>
 
