@@ -120,7 +120,7 @@ Unpack the agent into the directory of your choice. cd to that directory and run
 <em class="figure">Fig . Download and prepare tar files.</em>
 <br>
 <br>
-![agent]({{ site.baseurl }}/assets/img/2022-04-08/3a1.png){: .small70-image}
+![agent]({{ site.baseurl }}/assets/img/2022-04-08/3a1.png)
 <em class="figure">Fig . Agent Config.</em>
 <br>
 <br>
@@ -139,7 +139,7 @@ Default others or set your work directory.
 
 <strong> Step 4: Start </strong>
 
-![runagent]({{ site.baseurl }}/assets/img/2022-04-08/4a1.png){: .small70-image}
+![runagent]({{ site.baseurl }}/assets/img/2022-04-08/4a1.png)
 <em class="figure">Fig . Run Agent .</em>
 <br>
 <br>
@@ -184,10 +184,6 @@ Default others or set your work directory.
 
 <ol>
   <li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml">Pipeline variables</a></li>
-</ol>
-
-<ol>
-  <li><a href="https://www.geeksforgeeks.org/why-apache-kafka-is-so-fast/#:~:text=Horizontal%20Scaling%3A%20Kafka%20has%20the,throughput%20and%20provide%20low%20latency.">Why Apache Kafka is so Fast</a></li>
 </ol>
 
 <hr class="with-margin">
