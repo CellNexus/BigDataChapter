@@ -75,7 +75,7 @@ If your computer is using Linux, MacOS or would like to use Anaconda in Windows,
 
 <br>
 
-For Install Oracle VirtualBox on Windows OS, please check the [HDF post](https://www.forparkinson.com/BigDataChapter/blog/2019/05/17/hortonworks-sandbox)
+For Install Oracle VirtualBox on Windows OS, please check the [HDF post](https://pd.minervalink.com/BigDataChapter/blog/2019/05/17/hortonworks-sandbox)
 
 For install Ubuntu on VirtualBox:
 <br>
