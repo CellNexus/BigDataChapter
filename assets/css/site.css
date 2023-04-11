@@ -286,16 +286,10 @@ blockquote.algo li:not(:last-child) {
 .half-image {
     margin: 0 auto;
     display: block;
-    height:50%;
-    width:50%;
+    height: auto;
+    width: 50%;
+    object-fit: contain;
 }
-
-/* .small70-image {
-    margin: 0 auto;
-    display: block;
-    height:auto;
-    width:90%;
-} */
 
 .small70-image {
     margin: 0 auto;
