@@ -4,7 +4,7 @@ category: blog
 permalink: /:categories/:year/:month/:day/:title
 title: "DevOps Tools"
 tags: ['DevOp', 'Tools', 'agents']
-image: "2022-07-07/devops-tools-logo.png"
+image: "2022-07-07/logo.png"
 identifier: 3
 ---
 DevOps Tool is an application that helps automate the software development process. It mainly focuses on communication and collaboration between product management, software development, and operations professionals. DevOps tool also enables teams to automate most of the software development processes like build, conflict management, dependency management, deployment, etc. and helps reduce manual efforts.
