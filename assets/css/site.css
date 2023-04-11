@@ -40,7 +40,7 @@ body {
 .topmost .title {
     padding-top: 20px;
     font-size: 4em;
-    font-family: "Coda", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Coda", Georgia, 'Times New Roman', Times, serif;
     line-height: 1em;
     color: ghostwhite;
 }
@@ -74,7 +74,7 @@ body {
     width: 120px;
     line-height: 50px;
     font-size: 1.4em;
-    font-family: "Share", cursive;
+    font-family: "Share", Georgia, 'Times New Roman', Times, serif;
     margin-right: -4px;
 }
 
@@ -141,7 +141,7 @@ body {
 }
 
 .post .header {
-    font-family: "Share", cursive;
+    font-family: "Share", Georgia, 'Times New Roman', Times, serif;
 }
 
 .post h4.header:hover {
@@ -290,17 +290,11 @@ blockquote.algo li:not(:last-child) {
     width:50%;
 }
 
-/* .small70-image {
+.small70-image {
     margin: 0 auto;
     display: block;
     height:auto;
     width:90%;
-} */
-
-.small70-image {
-    margin: auto;
-    display: block;
-    transform: scale(0.5);
 }
 
 .autofit-image {
@@ -313,7 +307,7 @@ blockquote.algo li:not(:last-child) {
 /* ----- */
 
 p.huge {
-  font-family: "Share";
+  font-family: "Share", Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
   font-size: 1.5em;
 }
