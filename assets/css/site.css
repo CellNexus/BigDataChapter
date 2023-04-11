@@ -290,11 +290,17 @@ blockquote.algo li:not(:last-child) {
     width:50%;
 }
 
-.small70-image {
+/* .small70-image {
     margin: 0 auto;
     display: block;
     height:auto;
     width:90%;
+} */
+
+.small70-image {
+    margin: auto;
+    display: block;
+    transform: scale(0.5);
 }
 
 .autofit-image {
