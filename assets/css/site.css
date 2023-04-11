@@ -293,7 +293,7 @@ blockquote.algo li:not(:last-child) {
 .small70-image {
     margin: 0 auto;
     display: block;
-    height:90%;
+    height:auto;
     width:90%;
 }
 
