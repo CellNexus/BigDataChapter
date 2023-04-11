@@ -210,9 +210,25 @@ http://localhost:3000
 ```
 
 <hr class="with-margin">
+<h4 class="header" id="quantization">Models</h4>
+
+Memory Requirements:
+<br>
+7B => ~4 GB
+13B => ~8 GB
+30B => ~16 GB
+65B => ~32 GB
+<br>
+
+Models:
+<br>
+Alpaca: Currently 7B and 13B models are available via [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp)
+<br>
+LLaMA: The model name must be one of: 7B, 13B, 30B, and 65B.
+<br>
+
+<hr class="with-margin">
 <h4 class="header" id="quantization">Testing</h4>
-
-
 
 <hr class="with-margin">
 
