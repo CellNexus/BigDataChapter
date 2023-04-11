@@ -40,7 +40,7 @@ body {
 .topmost .title {
     padding-top: 20px;
     font-size: 4em;
-    font-family: "Coda", cursive;
+    font-family: "Coda", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 1em;
     color: ghostwhite;
 }
