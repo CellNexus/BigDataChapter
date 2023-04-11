@@ -56,7 +56,7 @@ While both the Stanford Alpaca model and ChatGPT use natural language processing
 Alpaca is fine-tuned on LLaMa, Meta’s large language model which recently leaked online. And to train this language model, scientists used OpenAI’s “text-davinci-003” model to generate 52K high-quality self-instruction data. With this dataset, they fine-tuned the LLaMA model using HuggingFace’s training framework and released the Alpaca 7B. You can also use Meta’s LLaMA model, but in my testing, Stanford’s Alpaca LLM performed much better and it’s also quite fast.
 <br>
 
-![db]({{ site.baseurl }}/assets/img/2022-04-09/1.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/1.png){: .small70-image}
 <em class="figure">Fig. Model</em>
 
 <hr class="with-margin">
@@ -91,11 +91,11 @@ git clone https://github.com/cocktailpeanut/dalai.git
 
 <br>
 
-![db]({{ site.baseurl }}/assets/img/2022-04-09/2.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/2.png){: .small70-image}
 <em class="figure">Fig. Git Clone 1</em>
 
 <br>
-![db]({{ site.baseurl }}/assets/img/2022-04-09/3.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/3.png){: .small70-image}
 <em class="figure">Fig. Git Clone 2</em>
 
 
@@ -111,15 +111,15 @@ docker compose build
 ```
 
 <br>
-![db]({{ site.baseurl }}/assets/img/2022-04-09/4.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/4.png){: .small70-image}
 <em class="figure">Fig. docker compose build</em>
 
 <br>
-![db]({{ site.baseurl }}/assets/img/2022-04-09/5.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/5.png){: .small70-image}
 <em class="figure">Fig. docker compose build</em>
 
 <br>
-![db]({{ site.baseurl }}/assets/img/2022-04-09/6.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/6.png){: .small70-image}
 <em class="figure">Fig. docker compose build</em>
 
 
@@ -135,19 +135,19 @@ There are no 30B and 65B Alpaca models.
 Downloaded model goes in './models'
 <br>
 
-![db]({{ site.baseurl }}/assets/img/2022-04-09/7.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/7.png){: .small70-image}
 <em class="figure">Fig. 7B</em>
 <br>
 
-![db]({{ site.baseurl }}/assets/img/2022-04-09/8.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/8.png){: .small70-image}
 <em class="figure">Fig. install model</em>
 <br>
 
-![db]({{ site.baseurl }}/assets/img/2022-04-09/9.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/9.png){: .small70-image}
 <em class="figure">Fig. install model</em>
 <br>
 
-![db]({{ site.baseurl }}/assets/img/2022-04-09/10.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/10.png){: .small70-image}
 <em class="figure">Fig. docker ps -a</em>
 <br>
 
@@ -156,7 +156,7 @@ docker compose up -d
 ```
 
 <br>
-![db]({{ site.baseurl }}/assets/img/2022-04-09/11.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/11.png){: .small70-image}
 <em class="figure">Fig. docker ps</em>
 <br>
 
@@ -167,14 +167,14 @@ http://localhost:3000
 ```
 
 <br>
-![db]({{ site.baseurl }}/assets/img/2022-04-09/12.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/12.png){: .small70-image}
 <em class="figure">Fig. web ui</em>
 <br>
 
 Check models
 
 <br>
-![db]({{ site.baseurl }}/assets/img/2022-04-09/12b.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/12b.png){: .small70-image}
 <em class="figure">Fig. only one model</em>
 <br>
 
@@ -189,12 +189,12 @@ docker compose run dalai npx dalai llama install 7B 13B
 ```
 
 <br>
-![db]({{ site.baseurl }}/assets/img/2022-04-09/13.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/13.png){: .small70-image}
 <em class="figure">Fig. install models</em>
 <br>
 
 <br>
-![db]({{ site.baseurl }}/assets/img/2022-04-09/14.png){: .small70-image}
+![db]({{ site.baseurl }}/assets/img/2023-04-09/14.png){: .small70-image}
 <em class="figure">Fig. install models</em>
 <br>
 
